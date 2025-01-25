@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Envelope😉</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="envelope-wrapper">
+        <div class="envelope">
+          <div class="letter">
+            <div class="text">
+              <strong>Dear Apel.</strong>
+              <p>
+                "I didn't fall in love with you. <br />I walked into love with
+                you,<br />
+                with my eyes wide open,<br />
+                choosing to take every step along the way. <br />I do believe in
+                fate and destiny."
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="heart"></div>
+      </div>
+    </div>
+    <!-- Add the audio tag -->
+    <audio id="love-audio" src="./assets/audio.mp3"></audio>
+
+    <script>
+      const envelope = document.querySelector(".envelope-wrapper");
+      const audio = document.getElementById("love-audio"); // Reference the audio element
+
+      envelope.addEventListener("click", () => {
+        envelope.classList.toggle("flap");
+        audio.play(); // Play the audio when the envelope is clicked
+      });
+    </script>
+  </body>
+</html>
